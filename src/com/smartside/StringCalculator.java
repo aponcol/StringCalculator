@@ -11,11 +11,16 @@ public final class StringCalculator {
 
     public static int Add(String input) {
 
-        if (input.equals("")) return 0;
+        if (inputIsEmpty(input)) return 0;
 
         int[] numbers = StringParser.getNumbers(input);
 
         return getSum(numbers);
+    }
+
+    private static boolean inputIsEmpty( String input )
+    {
+        return input.equals("");
     }
 
     private static int getSum(int[] numbers) {
@@ -41,7 +46,5 @@ public final class StringCalculator {
 
         return sum;
     }
-
-
 
 }
