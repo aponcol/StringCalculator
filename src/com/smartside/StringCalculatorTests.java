@@ -7,17 +7,20 @@ import org.junit.rules.ExpectedException;
 
 import java.security.InvalidParameterException;
 
-public class StringCalculatorTests {
+public class StringCalculatorTests
+{
 
     @Test
-    public void Add_EmptyString_Returns_0() {
+    public void Add_EmptyString_Returns_0()
+    {
 
         Assert.assertEquals(0, StringCalculator.Add(""));
 
     }
 
     @Test
-    public void Add_0_Returns_0() {
+    public void Add_0_Returns_0()
+    {
 
         String input = "0";
 
@@ -26,7 +29,8 @@ public class StringCalculatorTests {
     }
 
     @Test
-    public void Add_Single_Number_Returns_Same_Number() {
+    public void Add_Single_Number_Returns_Same_Number()
+    {
 
         String input = "1";
 
@@ -35,7 +39,8 @@ public class StringCalculatorTests {
     }
 
     @Test
-    public void Add_Different_Single_Number_Returns_Same_Number() {
+    public void Add_Different_Single_Number_Returns_Same_Number()
+    {
 
         String input = "4";
 
@@ -44,7 +49,8 @@ public class StringCalculatorTests {
     }
 
     @Test
-    public void Add_Two_Numbers_Returns_Sum() {
+    public void Add_Two_Numbers_Returns_Sum()
+    {
 
         String input = "1,2";
 
@@ -53,7 +59,8 @@ public class StringCalculatorTests {
     }
 
     @Test
-    public void Add_Multiple_Numbers_Returns_Sum() {
+    public void Add_Multiple_Numbers_Returns_Sum()
+    {
 
         String input = "5,5,6";
 
@@ -62,7 +69,8 @@ public class StringCalculatorTests {
     }
 
     @Test
-    public void New_Line_Can_Be_Used_As_Delimiter_For_Input() {
+    public void New_Line_Can_Be_Used_As_Delimiter_For_Input()
+    {
 
         String input = "1\n2,3";
 
@@ -71,7 +79,8 @@ public class StringCalculatorTests {
     }
 
     @Test
-    public void Custom_Delimiter_Is_Allowed() {
+    public void Custom_Delimiter_Is_Allowed()
+    {
 
         String input = "//;\n1;2";
 
@@ -79,16 +88,18 @@ public class StringCalculatorTests {
 
     }
 
-    @Test (expected = InvalidParameterException.class)
-    public void Negative_Number_Throw_Invalid_Input_Exception() {
+    @Test(expected = InvalidParameterException.class)
+    public void Negative_Number_Throw_Invalid_Input_Exception()
+    {
 
         String input = "-1";
 
         StringCalculator.Add(input);
     }
 
-    @Test (expected = InvalidParameterException.class)
-    public void Another_Negative_Number_Throw_Invalid_Input_Exception() {
+    @Test(expected = InvalidParameterException.class)
+    public void Another_Negative_Number_Throw_Invalid_Input_Exception()
+    {
 
         String input = "-3";
 
@@ -98,9 +109,9 @@ public class StringCalculatorTests {
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
 
-
     @Test
-    public void Negative_Number_Throw_Invalid_Input_With_Message() throws InvalidParameterException {
+    public void Negative_Number_Throw_Invalid_Input_With_Message() throws InvalidParameterException
+    {
 
         expectedException.expect(InvalidParameterException.class);
         expectedException.expectMessage("negatives not allowed: -5");
@@ -111,7 +122,9 @@ public class StringCalculatorTests {
     }
 
     @Test
-    public void Multiple_Negative_Numbers_Throw_Invalid_Input_With_All_Negative_Numbers_In_Message() throws InvalidParameterException {
+    public void Multiple_Negative_Numbers_Throw_Invalid_Input_With_All_Negative_Numbers_In_Message()
+            throws InvalidParameterException
+    {
 
         expectedException.expect(InvalidParameterException.class);
         expectedException.expectMessage("negatives not allowed: -3 -5");
@@ -123,7 +136,8 @@ public class StringCalculatorTests {
     }
 
     @Test
-    public void Numbers_Below_Upper_Limit_Are_Added() {
+    public void Numbers_Below_Upper_Limit_Are_Added()
+    {
 
         String input = "1,1000";
 
@@ -131,7 +145,8 @@ public class StringCalculatorTests {
     }
 
     @Test
-    public void Numbers_Above_Upper_Limit_Are_Not_Added() {
+    public void Numbers_Above_Upper_Limit_Are_Not_Added()
+    {
 
         String input = "2,1001";
 
@@ -139,7 +154,8 @@ public class StringCalculatorTests {
     }
 
     @Test
-    public void Complex_MultiCharacter_Delimiter_Is_Allowed() {
+    public void Complex_MultiCharacter_Delimiter_Is_Allowed()
+    {
 
         String input = "//[***]\n1***2***3";
 
@@ -147,7 +163,8 @@ public class StringCalculatorTests {
     }
 
     @Test
-    public void Another_Complex_MultiCharacter_Delimiter_Is_Allowed() {
+    public void Another_Complex_MultiCharacter_Delimiter_Is_Allowed()
+    {
 
         String input = "//[*d*]\n2*d*2*d*3";
 
@@ -155,7 +172,8 @@ public class StringCalculatorTests {
     }
 
     @Test
-    public void Multiple_Complex_SingleCharacter_Delimiter_Is_Allowed() {
+    public void Multiple_Complex_SingleCharacter_Delimiter_Is_Allowed()
+    {
 
         String input = "//[*][&]\n1*2&3";
 
@@ -163,7 +181,8 @@ public class StringCalculatorTests {
     }
 
     @Test
-    public void Multiple_Complex_MultiCharacter_Delimiter_Is_Allowed() {
+    public void Multiple_Complex_MultiCharacter_Delimiter_Is_Allowed()
+    {
 
         String input = "//[***][&&&]\n1***2&&&3";
 
@@ -171,10 +190,31 @@ public class StringCalculatorTests {
     }
 
     @Test
-    public void Another_Multiple_Complex_MultiCharacter_Delimiter_Is_Allowed() {
+    public void Another_Multiple_Complex_MultiCharacter_Delimiter_Is_Allowed()
+    {
 
         String input = "//[*&*][&*&]\n3*&*2&*&3";
 
         Assert.assertEquals(8, StringCalculator.Add(input));
+    }
+
+    @Test
+    public void closingBracket()
+    {
+
+        String input = "//[]]\n3]2]3";
+
+        Assert.assertEquals(8, StringCalculator.Add(input));
+    }
+
+    @Test
+    public void negativeNumberWithDashSeparator() throws InvalidParameterException
+    {
+        expectedException.expect(InvalidParameterException.class);
+        expectedException.expectMessage("negatives not allowed: -2");
+
+        String input = "//[-]\n3--2-3";
+
+        StringCalculator.Add(input);
     }
 }
