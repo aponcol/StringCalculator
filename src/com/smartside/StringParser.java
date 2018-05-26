@@ -1,6 +1,8 @@
 package com.smartside;
 
 import java.util.ArrayList;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 
 public final class StringParser {
 
@@ -14,7 +16,8 @@ public final class StringParser {
     private final static int simpleDelimiterIndex = 2;
 
     private final static String complexDelimiterPrefix = "[";
-    private final static String complexDelimiterSuffix = "]";
+    private final static String complexDelimiterPattern = "\\[((?!\\]\\[).)*\\]";
+    // Ex. [;][***] Each delimiter will match separately
 
     private final static String startOfNumbersPrefix = "\n";
 
@@ -64,22 +67,19 @@ public final class StringParser {
 
         ArrayList<String> delimiters = new ArrayList<>();
 
-        do {
+        Pattern pattern = Pattern.compile(complexDelimiterPattern);
+        Matcher matcher = pattern.matcher(input);
+
+        while(matcher.find()) {
 
             delimiters.add(
-
                 input.substring(
-                    input.indexOf(complexDelimiterPrefix) + 1,
-                    input.indexOf(complexDelimiterSuffix)
+            matcher.start() + 1,
+            matcher.end() - 1
                 )
-
             );
 
-            input = input.substring(
-                input.indexOf(complexDelimiterSuffix) + 1
-            );
-
-        } while (input.contains(complexDelimiterPrefix));
+        }
 
         return delimiters;
     }

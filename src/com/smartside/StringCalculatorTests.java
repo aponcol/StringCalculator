@@ -199,7 +199,7 @@ public class StringCalculatorTests
     }
 
     @Test
-    public void closingBracket()
+    public void Closing_Bracket_Delimiter_Is_Allowed()
     {
 
         String input = "//[]]\n3]2]3";

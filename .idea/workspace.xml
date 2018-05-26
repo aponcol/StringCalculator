@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9de62b1-9d4c-4542-bb7b-f8321056cae7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StringCalculator/com/smartside/StringCalculatorTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StringCalculator/com/smartside/StringCalculatorTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/smartside/StringCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/smartside/StringCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/smartside/StringCalculatorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/smartside/StringCalculatorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/smartside/StringParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/smartside/StringParser.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StringCalculatorTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StringCalculatorTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/smartside/StringCalculatorTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="207" column="5" lean-forward="true" selection-start-line="207" selection-start-column="5" selection-end-line="207" selection-end-column="5" />
+            <state relative-caret-position="173">
+              <caret line="201" column="52" selection-start-line="201" selection-start-column="52" selection-end-line="201" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -29,8 +27,8 @@
       <file leaf-file-name="StringCalculator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/smartside/StringCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="462">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
               <folding>
                 <element signature="e#520#521#0" expanded="true" />
                 <element signature="e#559#560#0" expanded="true" />
@@ -39,11 +37,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringParser.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StringParser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/smartside/StringParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="99" column="31" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+            <state relative-caret-position="335">
+              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,9 +78,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/smartside/Main.java" />
         <option value="$PROJECT_DIR$/src/com/smartside/StringParserTests.java" />
-        <option value="$PROJECT_DIR$/src/com/smartside/StringParser.java" />
-        <option value="$PROJECT_DIR$/src/com/smartside/StringCalculatorTests.java" />
         <option value="$PROJECT_DIR$/src/com/smartside/StringCalculator.java" />
+        <option value="$PROJECT_DIR$/src/com/smartside/StringCalculatorTests.java" />
+        <option value="$PROJECT_DIR$/src/com/smartside/StringParser.java" />
       </list>
     </option>
   </component>
@@ -93,10 +94,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1919" />
-    <option name="y" value="-11" />
-    <option name="width" value="1922" />
-    <option name="height" value="1092" />
+    <option name="x" value="50" />
+    <option name="y" value="23" />
+    <option name="width" value="1458" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -104,6 +105,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,7 +227,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -423,21 +424,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StringCalculatorTests_Pipe - 2018.05.25 at 14h 00m 35s.xml">
-      <configuration name="StringCalculatorTests.Pipe" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringCalculatorTests_Pipe - 2018.05.25 at 14h 00m 47s.xml">
-      <configuration name="StringCalculatorTests.Pipe" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringCalculatorTests_negativeNumberWithDashSeparator - 2018.05.25 at 14h 02m 08s.xml">
-      <configuration name="StringCalculatorTests.negativeNumberWithDashSeparator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringCalculatorTests - 2018.05.25 at 14h 03m 02s.xml">
-      <configuration name="StringCalculatorTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringCalculatorTests_negativeNumberWithDashSeparator - 2018.05.25 at 14h 06m 16s.xml">
-      <configuration name="StringCalculatorTests.negativeNumberWithDashSeparator" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StringCalculatorTests_negativeNumberWithDashSeparator - 2018.05.25 at 14h 06m 19s.xml">
       <configuration name="StringCalculatorTests.negativeNumberWithDashSeparator" configurationId="JUnit" />
     </history-entry>
@@ -453,12 +439,27 @@
     <history-entry file="StringCalculatorTests - 2018.05.25 at 14h 10m 01s.xml">
       <configuration name="StringCalculatorTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StringCalculatorTests - 2018.05.26 at 12h 44m 43s.xml">
+      <configuration name="StringCalculatorTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringCalculatorTests - 2018.05.26 at 13h 15m 16s.xml">
+      <configuration name="StringCalculatorTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringCalculatorTests - 2018.05.26 at 13h 22m 28s.xml">
+      <configuration name="StringCalculatorTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringCalculatorTests - 2018.05.26 at 13h 23m 38s.xml">
+      <configuration name="StringCalculatorTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringCalculatorTests - 2018.05.26 at 13h 23m 59s.xml">
+      <configuration name="StringCalculatorTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="34105000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-1" width="1920" height="1081" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -469,26 +470,26 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3275218" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32843652" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2524013" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25208333" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39979014" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,6 +504,34 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/smartside/StringCalculatorTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3030">
+          <caret line="207" column="5" lean-forward="true" selection-start-line="207" selection-start-column="5" selection-end-line="207" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/smartside/StringCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/smartside/StringParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="99" column="31" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/smartside/StringCalculatorTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -535,20 +564,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/String.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10365">
-          <caret line="691" column="11" selection-start-line="691" selection-start-column="11" selection-end-line="691" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/AssertAll.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/String.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/AssertAll.class" />
     <entry file="file://$PROJECT_DIR$/src/com/smartside/StringCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1200">
@@ -570,20 +587,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/String.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9555">
-          <caret line="691" column="11" selection-start-line="691" selection-start-column="11" selection-end-line="691" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/AssertAll.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/String.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/AssertAll.class" />
     <entry file="file://$PROJECT_DIR$/src/com/smartside/StringCalculatorTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1230">
@@ -598,20 +603,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/String.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9555">
-          <caret line="691" column="11" lean-forward="true" selection-start-line="691" selection-start-column="11" selection-end-line="691" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/AssertAll.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/String.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/AssertAll.class" />
     <entry file="file://$PROJECT_DIR$/src/com/smartside/StringCalculatorTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
@@ -619,13 +612,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/AssertAll.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/AssertAll.class" />
     <entry file="file://$PROJECT_DIR$/src/com/smartside/StringCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -647,29 +634,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/AssertAll.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/AssertAll.class" />
     <entry file="file://$PROJECT_DIR$/src/com/smartside/Main.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/AssertAll.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/AssertAll.class" />
     <entry file="file://$PROJECT_DIR$/src/com/smartside/Main.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/AssertAll.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/AssertAll.class" />
     <entry file="file://$PROJECT_DIR$/src/com/smartside/StringCalculatorTests.java" />
     <entry file="file://$PROJECT_DIR$/src/com/smartside/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/com/smartside/Main.java" />
@@ -680,13 +649,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/AssertAll.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/AssertAll.class" />
     <entry file="file://$PROJECT_DIR$/src/com/smartside/StringParserTests.java" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -709,24 +672,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/String.class">
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/String.class" />
+    <entry file="file://$PROJECT_DIR$/src/com/smartside/StringCalculatorTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="781" column="18" selection-start-line="781" selection-start-column="18" selection-end-line="781" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/smartside/StringParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="99" column="31" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+        <state relative-caret-position="173">
+          <caret line="201" column="52" selection-start-line="201" selection-start-column="52" selection-end-line="201" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/smartside/StringCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="462">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
           <folding>
             <element signature="e#520#521#0" expanded="true" />
             <element signature="e#559#560#0" expanded="true" />
@@ -734,10 +691,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/smartside/StringCalculatorTests.java">
+    <entry file="file://$PROJECT_DIR$/src/com/smartside/StringParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="207" column="5" lean-forward="true" selection-start-line="207" selection-start-column="5" selection-end-line="207" selection-end-column="5" />
+        <state relative-caret-position="335">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
