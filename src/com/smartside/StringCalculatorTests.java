@@ -208,12 +208,23 @@ public class StringCalculatorTests
     }
 
     @Test
-    public void negativeNumberWithDashSeparator() throws InvalidParameterException
+    public void Dash_As_Delimiter_Is_Allowed() throws InvalidParameterException
     {
         expectedException.expect(InvalidParameterException.class);
         expectedException.expectMessage("negatives not allowed: -2");
 
         String input = "//[-]\n3--2-3";
+
+        StringCalculator.Add(input);
+    }
+
+    @Test
+    public void Double_Dash_As_Delimiter_Is_Allowed() throws InvalidParameterException
+    {
+        expectedException.expect(InvalidParameterException.class);
+        expectedException.expectMessage("negatives not allowed: -5");
+
+        String input = "//[--]\n3---5--3";
 
         StringCalculator.Add(input);
     }

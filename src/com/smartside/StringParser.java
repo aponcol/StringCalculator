@@ -21,6 +21,9 @@ public final class StringParser {
 
     private final static String startOfNumbersPrefix = "\n";
 
+    public static final String defaultNegativeSymbol = "-";
+    public static final String temporaryNegativeSymbol = "[NEG]";
+
     public static int[] getNumbers(String input) {
 
         String[] unparsedNumbers = getUnparsedNumbers(input);
@@ -43,11 +46,38 @@ public final class StringParser {
 
         ArrayList<String> delimiters = getDelimiters(input);
 
+        input = removeCustomDelimiters(input);
+
         for (String delimiter : delimiters) {
-            input = input.replace(delimiter, simpleDefaultDelimiter);
+
+            if (delimiterEndsWithNegativeSymbol(delimiter)) {
+                input = replaceNegativeEndingDelimiterWithSimpleDelimiter(input, delimiter);
+            } else {
+                input = input.replace(delimiter, simpleDefaultDelimiter);
+            }
         }
 
         return removeCustomDelimiters(input);
+    }
+
+    private static String replaceNegativeEndingDelimiterWithSimpleDelimiter(String input, String delimiter) {
+
+        input = input.replace(
+        delimiter + defaultNegativeSymbol,
+    delimiter + temporaryNegativeSymbol
+        );
+
+        input = input.replace(
+            delimiter,
+            simpleDefaultDelimiter
+        );
+
+        return input.replace(temporaryNegativeSymbol, defaultNegativeSymbol);
+
+    }
+
+    private static boolean delimiterEndsWithNegativeSymbol(String delimiter) {
+        return delimiter.charAt(delimiter.length() - 1) == '-';
     }
 
     private static ArrayList<String> getDelimiters(String input) {
