@@ -2,16 +2,21 @@ package com.smartside;
 
 import java.security.InvalidParameterException;
 
-public final class StringCalculator {
+public final class StringCalculator
+{
 
     private StringCalculator() {}
 
     public static final String NEGATIVES_NOT_ALLOWED = "negatives not allowed:";
-    public static final int UPPER_LIMIT = 1000;
+    public static final int    UPPER_LIMIT           = 1000;
 
-    public static int Add(String input) {
+    public static int Add( String input )
+    {
 
-        if (inputIsEmpty(input)) return 0;
+        if (inputIsEmpty(input))
+        {
+            return 0;
+        }
 
         int[] numbers = StringParser.getNumbers(input);
 
@@ -23,26 +28,33 @@ public final class StringCalculator {
         return input.equals("");
     }
 
-    private static int getSum(int[] numbers) {
+    private static int getSum( int[] numbers )
+    {
 
         int sum = 0;
         String negativeNumbers = "";
 
-        for (int number : numbers) {
+        for (int number : numbers)
+        {
 
-            if (number < 0) {
+            if (number < 0)
+            {
                 negativeNumbers += " " + number;
                 continue;
             }
 
-            if (number > UPPER_LIMIT) {
+            if (number > UPPER_LIMIT)
+            {
                 continue;
             }
 
             sum += number;
         }
 
-        if (negativeNumbers != "") throw new InvalidParameterException(NEGATIVES_NOT_ALLOWED + negativeNumbers);
+        if (negativeNumbers != "")
+        {
+            throw new InvalidParameterException(NEGATIVES_NOT_ALLOWED + negativeNumbers);
+        }
 
         return sum;
     }
